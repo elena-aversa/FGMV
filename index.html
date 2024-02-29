@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <title>Field Guide to MisVis</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>FGMV</strong></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <h1>A field Guide to MisVis</h1>
+                    <img src="images/prova.png">
+                <div class="margins">
+                <p>Data visualisations circulating on social media can <i>mislead</i>. 
+                <br>They can give the impression that there is only one way to interpret the facts, especially concerning sensitive topics. 
+                <p>However, the truth is that data visualisations are not always value-neutral or independent of biases. 
+                <br>They represent one of many possible interpretations of reality. 
+                <p>Misleading data visualisations can be harmful, threatening our freedom and our right to accurate information. 
+                <h3>Being critical is <i>essential</i>.</h3> 
+                <p>With this Field Guide, you can explore and recognise the threats posed by data visualisations circulating on social media during social crises.</p>
+            </div>
+        </section>
+               <section>
+               <h2>When are data visualisations misleading on social media?</h2>
+                <p>Before drawing your own conclusions, consider the following elements when you approach a data visualisation on social media:</p>
+            </section>
+            <section id="designSection" class="line-after">
+                <h3>The design of the data visualisation</h3>
+                <p>Take a closer look at how information is visually presented. 
+                <br><i class="color">The choices made in the design process can make a data visualisation misleading.</i></p>
+                <p><button onclick="toggleSection('designContent')">Expand this section</button></p>
+                <div id="designContent" class="expandable-content">
+                    <h3>The Design of the Data Visualisation</h3>
+                    <p>The process of designing a data visualisation consists of iterative steps, which can vary depending on the specific case. However, they can be broadly grouped in three main categories:</p>
+                    <ul class="custom-bullets">
+                        <img src="diagram1.png">
+                    <p>In these three stages, it can happen that, with or without intention, the designer of the data visualisation applies some misleading tactics, which may render the data visualisation misleading.</p>
+                    <button id="goToMisTac">I want to know more about these misleading tactics</button>
+                </div>
+            </section>
+            <section id="positionSection">
+                <h3>The position of the social media post</h3>
+                <p>Pay attention to the message accompanying the data visualisation. 
+                <br><i class="color">A misleading data visualisation can be presented as reliable.</i></p>
+                <p class="line-after"><button onclick="event.preventDefault()">Expand this section.</button></p>
+            </section>
+            <section id="reactionSection">
+                <h3>The reactions in the comment section of the post</h3>
+                <p>Observe how others react to the data visualisation. 
+                <br><i class="color">Often users expose the misleading nature of the data visualisation.</i></p>
+                <p class="line-after"><button onclick="event.preventDefault()">Expand this section.</button></p>
+
+
+            </section>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <small>
+            <p>Copyright 2024 Elena Aversa</p>
+        </small>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
