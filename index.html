@@ -38,7 +38,7 @@
                <h2>When are data visualisations misleading on social media?</h2>
                 <p>Before drawing your own conclusions, consider the following elements when you approach a data visualisation on social media:</p>
             </section>
-            <section id="designSection" class="line-after">
+            <section id="designSection" class="boxcards">
                 <h3>The design of the data visualisation</h3>
                 <p>Take a closer look at how information is visually presented. 
                 <br><i class="color">The choices made in the design process can make a data visualisation misleading.</i></p>
@@ -65,7 +65,7 @@
                     <button id="goToMisTac">I want to know more</button>
                 </div>
             </section>
-            <section id="positionSection" class="line-after">
+            <section id="positionSection" class="boxcards">
                 <h3>The position of the social media post</h3>
                 <p>Pay attention to the message accompanying the data visualisation. 
                 <br><i class="color">A misleading data visualisation can be presented as reliable.</i></p>
@@ -94,13 +94,34 @@
                     <button id="goToNarr">I want to know more</button>
                 </div>
             </section>
-            <section id="reactionSection">
+            <section id="reactionSection" class="boxcards">
                 <h3>The reactions in the comment section of the post</h3>
                 <p>Observe how others react to the data visualisation. 
                 <br><i class="color">Often users expose the misleading nature of the data visualisation.</i></p>
-                <p class="line-after"><button onclick="event.preventDefault()">Expand this section.</button></p>
+                <p><button onclick="toggleSection('reactionContent')">Expand this section</button></p>
+                <div id="reactionContent" class="expandable-content">
+                    <p>When shared online, data visualisations can be used with different purposes. The same data visualisation can be used to support even opposing viewpoints. The stances taken can vary in detail, but can be broadly grouped in:</p>
+                        
+                    <table class="outlined-table">
+                        <tbody>
+                          <tr>
+                            <td style="border-color: white;"><span style="font-family: dind;">1 – Sceptical post</span><br>
+                                <span class="color">Lorem.</span></td>
+                          </tr>
+                          <tr>
+                            <td style="border-color: white;"><span style="font-family: dind;">2 – Descriptive post</span><br>
+                                <span class="color">Lorem.</span></td>
+                          </tr>
+                          <tr>
+                            <td style="border-color: white;"><span style="font-family: dind;">3 – Confirming post</span>
+                            <br><span class="color">Lorem.</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
-
+                    <p>Always be critical of the text accompanying a visualisation, particularly if it appears overly polarised. Always assess the misleading potential of the data visualisation before trusting its message.</p>
+                    <button id="goToNarr">I want to know more</button>
+                </div>
             </section>
         </div>
     </main>
