@@ -111,4 +111,9 @@ button2:hover {
     font-size: 1rem; /* Adjust as needed */
 }
 
-/* Your existing styles for .square-container and color classes remain the same */
+
+
+.boxcards {
+    outline: 1px solid black;
+    padding: 1rem;
+}

@@ -263,9 +263,6 @@ ul.custom-bullets li::before {
     padding: 0.7rem 2rem; 
   }
   
-  .outlined-table th {
-    /* background-color: #eeeeee; */
-  }
   
 .svgcontainer {
     width: 70%;

@@ -5,10 +5,10 @@ function toggleSection(sectionId) {
 
     if (content.style.display === "none" || !content.style.display) {
         content.style.display = "block";
-        button.textContent = "Collapse this section";
+        button.textContent = "Collapse this section ▴";
     } else {
         content.style.display = "none";
-        button.textContent = "Expand this section";
+        button.textContent = "Expand this section ▾";
     }
 }
 
