@@ -44,19 +44,55 @@
                 <br><i class="color">The choices made in the design process can make a data visualisation misleading.</i></p>
                 <p><button onclick="toggleSection('designContent')">Expand this section</button></p>
                 <div id="designContent" class="expandable-content">
-                    <h3>The Design of the Data Visualisation</h3>
                     <p>The process of designing a data visualisation consists of iterative steps, which can vary depending on the specific case. However, they can be broadly grouped in three main categories:</p>
-                    <ul class="custom-bullets">
-                        <img src="diagram1.png">
-                    <p>In these three stages, it can happen that, with or without intention, the designer of the data visualisation applies some misleading tactics, which may render the data visualisation misleading.</p>
-                    <button id="goToMisTac">I want to know more about these misleading tactics</button>
+                            <table class="outlined-table">
+                                <tbody>
+                                  <tr>
+                                    <td style="border-color: white;"><span style="font-family: dind;">1 – Working with the data</span><br>
+                                        <span class="color">In this stage, the designer of the visualisation acquires, organises, filters, and analyses the data for the visualisations.</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="border-color: white;"><span style="font-family: dind;">2 – Visualising the data</span><br>
+                                        <span class="color">In this stage, the designer decides how to visualise the selected data.</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="border-color: white;"><span style="font-family: dind;">3 – Finalising the data visualisation</span>
+                                    <br><span class="color">In this stage, the designer improves the output of the previous stage by adding, removing or editing the visual elements.</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                    <p>In these three stages, it can happen that, with or without intention, the designer of the data visualisation applies some misleading tactics, which may render the data visualisation misleading. The number of tactics applied define the misleading potential of a data visualisation.</p>
+                    <button id="goToMisTac">I want to know more</button>
                 </div>
             </section>
-            <section id="positionSection">
+            <section id="positionSection" class="line-after">
                 <h3>The position of the social media post</h3>
                 <p>Pay attention to the message accompanying the data visualisation. 
                 <br><i class="color">A misleading data visualisation can be presented as reliable.</i></p>
-                <p class="line-after"><button onclick="event.preventDefault()">Expand this section.</button></p>
+                <p><button onclick="toggleSection('positionContent')">Expand this section</button></p>
+                <div id="positionContent" class="expandable-content">
+                    <p>When shared online, data visualisations can be used with different purposes. The same data visualisation can be used to support even opposing viewpoints. The stances taken can vary in detail, but can be broadly grouped in:</p>
+                        
+                    <table class="outlined-table">
+                        <tbody>
+                          <tr>
+                            <td style="border-color: white;"><span style="font-family: dind;">1 – Sceptical post</span><br>
+                                <span class="color">Lorem.</span></td>
+                          </tr>
+                          <tr>
+                            <td style="border-color: white;"><span style="font-family: dind;">2 – Descriptive post</span><br>
+                                <span class="color">Lorem.</span></td>
+                          </tr>
+                          <tr>
+                            <td style="border-color: white;"><span style="font-family: dind;">3 – Confirming post</span>
+                            <br><span class="color">Lorem.</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    <p>Always be critical of the text accompanying a visualisation, particularly if it appears overly polarised. Always assess the misleading potential of the data visualisation before trusting its message.</p>
+                    <button id="goToNarr">I want to know more</button>
+                </div>
             </section>
             <section id="reactionSection">
                 <h3>The reactions in the comment section of the post</h3>
