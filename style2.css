@@ -56,6 +56,10 @@
     font-size: 1.2rem;
 }
 
+.caption{
+    font-size: 1rem;
+}
+
 button2 {
     text-decoration: none;
     background-color: transparent;
@@ -115,5 +119,5 @@ button2:hover {
 
 .boxcards {
     outline: 1px solid black;
-    padding: 1rem;
+    padding: 2rem;
 }
