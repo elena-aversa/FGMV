@@ -62,11 +62,6 @@
     border-bottom: 1px solid #000;
   }
 
-  section {
-    /*border-bottom: 1px solid #000000;*/
-    padding-bottom: 0.3rem;
-    padding-top: 0.3rem;
-  }
   
   .color {
     color:#838383
@@ -86,7 +81,7 @@
       background-color: white;
       margin: 0;
       font-family: "Source Serif 4", serif;
-      font-size: 1.4rem; /* General font size */
+      font-size: 1.3rem; /* General font size */
       display: flex;
       flex-direction: column;
       min-height: 100vh; /* Make sure the footer can stick to the bottom */
@@ -126,6 +121,7 @@ img {
       width: 100%; /* Ensure container and footer width is consistent */
   }
   
+  
   .grid {
       display: grid;
       gap: 2rem;
@@ -147,6 +143,24 @@ button {
   button:hover {
       background-color: #d1fa00;
   }
+
+
+  button2 {
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    font-family: "dind";
+}
+
+button2 {
+    cursor: pointer;
+}
+
+button2:hover {
+    background-color: #d1fa00;
+}
 
 nav a:hover {
     font-style: italic;
@@ -248,9 +262,10 @@ ul.custom-bullets li::before {
     top: 50%;
 }
 
+
 .outlined-table {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     border-collapse: collapse; 
     width: auto; 
   }
@@ -293,4 +308,14 @@ ul.custom-bullets li::before {
           max-width: 1320px;
       }
   }
-  
+
+  a{
+    color:#838383
+  }
+
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* adjust the ratio according to your preference */
+    gap: 20px; /* space between image and text */
+}
