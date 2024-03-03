@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <title>Field Guide to MisVis</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>FGMV</strong></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+               <h1 style="line-height: 1.2;">How to spot misleading data visualisations on social media?</h1>
+                <p>The process is not immediate. This assumes seeing things differently: looking at data visualisations with a critical mindset. It means questioning, analysing, interpreting, and evaluating each data visualisation. 
+                    <p>This is how a post featuring a data visualisation typically looks on a social media platform.</p>
+                    <img src="images/schemaDV.png">
+                    <p>Before drawing your own conclusions, consider the following three elements when you approach a data visualisation on social media.</p>
+                    <p> 💡 Tip: browse the three boxes below in order (or not), and then come back to this main page to test how much you learned!</p>
+            </section>
+            <section id="designSection" class="boxcards" style="background-color: #EEEEEE;">
+                <h3>1. The design of the data visualisation</h3>
+                <p>Take a closer look at how information is visually presented. 
+                <br><i class="color">The choices made in the design process can make a data visualisation misleading.</i></p>
+                <p><button onclick="toggleSection('designContent')">Expand this section ▾</button></p>
+                <div id="designContent" class="expandable-content">
+                    <p>The process of designing a data visualisation consists of iterative steps, which can vary depending on the specific case. However, they can be broadly grouped in three main categories:</p>
+                            <table class="outlined-table">
+                                <tbody>
+                                  <tr>
+                                    <td style="background-color: white;"><span style="font-family: dind;">1 – Working with the data</span><br>
+                                        <span class="color">In this stage, the designer of the visualisation acquires, organises, filters, and analyses the data for the visualisations.</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="background-color: white;"><span style="font-family: dind;">2 – Visualising the data</span><br>
+                                        <span class="color">In this stage, the designer decides how to visualise the selected data.</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="background-color: white;"><span style="font-family: dind;">3 – Finalising the data visualisation</span>
+                                    <br><span class="color">In this stage, the designer improves the output of the previous stage by adding, removing or editing the visual elements.</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                    <p>In these three stages, it can happen that, with or without intention, the designer of the data visualisation applies some misleading tactics, which may render the data visualisation misleading. The number of tactics applied define the misleading potential of a data visualisation.</p>
+                    <button id="goToMisTac">I want to know more</button>
+                </div>
+            </section>
+            <section id="positionSection" class="boxcards" style="background-color: #EEEEEE;">
+                <h3>2. The position of the social media post</h3>
+                <p>Pay attention to the message accompanying the data visualisation. 
+                <br><i class="color">A misleading data visualisation can be presented as reliable.</i></p>
+                <p><button onclick="toggleSection('positionContent')">Expand this section ▾</button></p>
+                <div id="positionContent" class="expandable-content">
+                    <p>When shared online, data visualisations can be used with different purposes. The same data visualisation can be used to support even opposing viewpoints. The stances taken can vary in detail, but can be broadly grouped in:</p>
+                        
+                    <table class="outlined-table">
+                        <tbody>
+                          <tr>
+                            <td style="background-color: white;"><span style="font-family: dind;">1 – Sceptical post</span><br>
+                                <span class="color">Posts that challenge or question the info in the data visualisation. They might outright say the visualisation is misleading, not trustworthy, or has issues, or simply disagree with what the post is saying.</span></td>
+                          </tr>
+                          <tr>
+                            <td style="background-color: white;"><span style="font-family: dind;">2 – Descriptive post</span><br>
+                                <span class="color">Posts that don't clearly pick sides about the info in the data visualisation. Instead, they describe specific situations, details, or the visualisation itself. These posts give a neutral view or thoughts on different parts of the visualisation.</span></td>
+                          </tr>
+                          <tr>
+                            <td style="background-color: white;"><span style="font-family: dind;">3 – Confirming post</span>
+                            <br><span class="color">Posts supporting or agreeing with the information in the data visualisation often show clear backing. They explain why the visualisation is seen as reliable or makes sense. In short, the text believes in what the visualisation shows and supports its story.</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    <p>Always be critical of the text accompanying a visualisation, particularly if it appears overly polarised. Always assess the misleading potential of the data visualisation before trusting its message.</p>
+                    <button id="goToNarr">I want to know more</button>
+                </div>
+            </section>
+            <section id="reactionSection" class="boxcards" style="background-color: #EEEEEE;">
+                <h3>3. The reactions in the comment section of the post</h3>
+                <p>Observe how others react to the data visualisation. 
+                <br><i class="color">Often users expose the misleading nature of the data visualisation.</i></p>
+                <p><button onclick="toggleSection('reactionContent')">Expand this section ▾</button></p>
+                <div id="reactionContent" class="expandable-content">
+                    <p>Similarly to the position of the post, the comments on the post can also be misleading. 
+                        Some users may support the message shared with the misleading data visualisation, while others may reveal its true nature. 
+                        The stances taken can vary in detail but can be broadly categorised into:</p>
+                        
+                    <table class="outlined-table">
+                        <tbody>
+                          <tr>
+                            <td style="background-color: white;"><span style="font-family: dind;">1 – Sceptical comments</span><br>
+                                <span class="color">Comments that challenge or question the info in the data visualisation or oppose to the narrative of the post. They might outright say the visualisation is misleading, not trustworthy, or has issues, or simply disagree with what the post is saying. They might use irony or other media, such as memes.</span></td>
+                          </tr>
+                          <tr>
+                            <td style="background-color: white;"><span style="font-family: dind;">2 – Descriptive post</span><br>
+                                <span class="color">Comments that don't clearly pick sides about the info in the data visualisation. Instead, they describe specific situations, details, or the visualisation itself or ask question with the only intent to know more. These comments give a neutral view or thoughts on different parts of the visualisation.</span></td>
+                          </tr>
+                          <tr>
+                            <td style="background-color: white;"><span style="font-family: dind;">3 – Confirming post</span>
+                            <br><span class="color">Comments supporting or agreeing with the information in the data visualisation often show clear backing. They explain why the visualisation is seen as reliable or makes sense. In short, the text believes in what the visualisation shows and supports its story.</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    <p>Always be critical of the comments on a data visualisation, try to consider different points of view, and remain open to various possibilities.</p>
+                    <button id="goToNarr">I want to know more</button>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <div>
+        <h2 style="margin-top: 4rem; background-color: #d1fa00; padding-bottom: 2rem; padding-top: 2rem; padding-left: 2rem; text-align: center;">Was everything clear? 
+            <br>Want to see how much you've learned from this Field Guide? 
+            <br><button2> Try the quizhere!</button2>
+        </div>
+    <footer class="container-fluid">
+        <small>
+            <p>Copyright 2024 Elena Aversa</p>
+        </small>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
