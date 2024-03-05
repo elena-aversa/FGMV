@@ -67,6 +67,7 @@ button2 {
     border: 1px solid black;
     font-size: 2.5rem;
     font-family: "dind";
+
 }
 
 button2 {
@@ -75,6 +76,7 @@ button2 {
 
 button2:hover {
     background-color: #d1fa00;
+
 }
 
 
@@ -121,3 +123,27 @@ button2:hover {
     outline: 1px solid black;
     padding: 2rem;
 }
+
+
+.shad {
+    box-shadow: 0rem 0rem 0rem #d0fa00b6;
+    border-radius: 20rem;
+  }
+
+
+
+  .animated-word {
+    display: inline-block;
+    cursor: pointer;
+    animation: pulseRotate 2s infinite;
+  }
+  
+  @keyframes pulseRotate {
+    0%, 100% {
+      transform:  rotate(-9deg);
+    }
+    50% {
+      transform: rotate(9deg); /* Adjust scale and rotation as needed */
+    }
+  }
+  
