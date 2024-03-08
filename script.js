@@ -17,6 +17,9 @@ document.getElementById('goToMisTac').addEventListener('click', function() {
 });
 
 
+document.getElementById('goTonarPos').addEventListener('click', function() {
+    window.location.href = 'narPos.html';
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     // Query all the elements with the class 'toggle-sym'
@@ -40,4 +43,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+let particles = [];
+
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+    for (let i = 0; i < 100; i++) {
+        particles.push(createVector(random(width), random(height)));
+    }
+}
+
+function draw() {
+    background(255);
+    particles.forEach(p => {
+        p.x += random(-1, 1);
+        p.y += random(-1, 1);
+        stroke(0);
+        strokeWeight(4);
+        point(p.x, p.y);
+    });
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
 
