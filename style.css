@@ -18,6 +18,26 @@
       src: url('DINdong.otf') format('opentype');
   }
   
+  @font-face {
+    font-family: 'abord';
+    src: url('AbordageRegular.otf') format('opentype');
+}
+
+  @font-face {
+    font-family: 'abs';
+    src: url('AbsansRegular.otf') format('opentype');
+}
+
+  @font-face {
+    font-family: 'osr';
+    src: url('OpenSansRegular.ttf') format('opentype');
+}
+
+  @font-face {
+    font-family: 'nmr';
+    src: url('NectoMonoRegular.otf') format('opentype');
+}  
+
   .imagegrid-container {
     width: 100%; 
     height: auto;
@@ -27,7 +47,7 @@
   }
 
   nav.container-fluid {
-      position: -webkit-sticky; /* For Safari */
+      position: -webkit-sticky;
       position: sticky;
       top: 0;
       background-color: white;
@@ -56,11 +76,11 @@
   
   
   .bordertop {
-    border-top: 1px solid #000;
+    border-top: 1px solid #ababab;
   }
 
   .borderbot {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #ababab;
   }
 
   
@@ -81,16 +101,16 @@
       color: black;
       background-color: white;
       margin: 0;
-      font-family: "Source Serif 4", serif;
+      font-family: "abs";
       font-size: 1.3rem; /* General font size */
       display: flex;
       flex-direction: column;
-      min-height: 100vh; /* Make sure the footer can stick to the bottom */
+      min-height: 100vh; 
   }
   
   h1 {
       color: black;
-      font-family: 'homonr';
+      font-family: 'abs';
       font-size: 5rem;
       font-weight: normal !important;
       line-height: 1.2;
@@ -98,14 +118,14 @@
 
   h2 {
     color: black;
-    font-family: 'homonr';
+    font-family: 'abs';
     font-size: 2.8rem;
     font-weight: normal !important;
 }
   
   h3 {
     color: black;
-    font-family: 'dind';
+    font-family: 'abs';
     font-size: 1.8rem;
     font-weight: normal !important;
 }
@@ -118,9 +138,9 @@ img {
 }
   .container {
       margin: auto;
-      padding: 1rem;
+      padding: 2rem;
       box-sizing: border-box;
-      width: 100%; /* Ensure container and footer width is consistent */
+      width: 100%; 
   }
   
   
@@ -135,7 +155,7 @@ button {
       padding: 0.5rem 1rem;
       border: 1px solid black;
       font-size: 1rem;
-      font-family: "dind";
+      font-family: "nmr";
   }
   
   button {
@@ -153,7 +173,7 @@ button {
     padding: 0.5rem 1rem;
     border: 1px solid black;
     font-size: 1rem;
-    font-family: "dind";
+    font-family: "nmr";
 }
 
 button2 {
@@ -165,7 +185,6 @@ button2:hover {
 }
 
 nav a:hover {
-    font-style: italic;
     color: #c2c6af !important;
 }
 footer.container-fluid {
@@ -257,11 +276,10 @@ ul.custom-bullets li::before {
 .big-container {
     width: 90%;
     height: auto;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: relative;
-    top: 50%;
 }
 
 
@@ -320,4 +338,15 @@ ul.custom-bullets li::before {
     display: grid;
     grid-template-columns: 1fr 1fr; /* adjust the ratio according to your preference */
     gap: 20px; /* space between image and text */
+}
+
+.headtablimg {
+    position: -webkit-sticky;
+      position: sticky;
+      z-index: 1000;
+      top: 0;
+      width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: 30px;
 }

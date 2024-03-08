@@ -147,3 +147,78 @@ button2:hover {
     }
   }
   
+
+
+  .hover-image {
+    transition: transform 0.2s ease; /* Smooth transition */
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hover-image:hover {
+    transform: scale(1.1); /* Enlarge the image */
+}
+
+
+
+.table2 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 4rem;
+}
+
+.table2 th, .table2 td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+.table2 th {
+    font-family: 'nmr';
+    font-size: 1REM;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 40px;
+    border: 1px solid #000000;
+    background-color: #fff;
+    z-index: 1000; 
+}
+
+.table2 .filled-circle {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+}
+
+.table2 .outlined-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+}
+
+.table2 img {
+    width: 15rem; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.misleading-potential {
+    /*background-color: #DA775932;*/
+    background-color: #eeeeee;
+}
+.moderate-potential {
+    /*background-color: #D4D27532;*/
+    background-color: #eeeeee;
+}
+.low-potential {
+    /*background-color: #a2c1c532;*/
+    background-color: #eeeeee;
+}
